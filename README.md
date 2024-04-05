@@ -38,40 +38,41 @@ For the optimization model, we increased the number of nodes and used sigmoid in
 <img src="images/model_opt.png">
 
 We were not able to achive over 75% predictive accuracy as we aimed and hoped for. Despite of many trials, we achived up to only 73% accuracy.
+
+**first model**
 <img src="images/training_strt.png">
 <img src="images/accuracy_strt.png">
 
-**first model**
 
+**optimized model**
 <img src="images/training_opt.png">
 <img src="images/accuracy_opt.png">
 
-**optimized model**
 
 We addressed the following questions to explore and interpret our results:
 
 ### Data Preprocessing
 ```
-* What variable(s) are the target(s) for your model?
+1. What variable(s) are the target(s) for your model?
 The target variable (y) was IS_SUCCESSFUL indicating whether the money funded by Alphabet Soup was worthwhile.
 
-* What variable(s) are the features for your model?
+2. What variable(s) are the features for your model?
 All except the target (IS_SUCCESSFUL) and identification variables (EIN and NAME) were added as features (X) for our model.
 
-* What variable(s) should be removed from the input data because they are neither targets nor features?
+3. What variable(s) should be removed from the input data because they are neither targets nor features?
 The identification variables including EIN and NAME were dropped because they did not carry intrinsic value to our analysis (the organization's name and ID number would not necessarily determine success in its venture).
 ```
 
 ### Compiling, Training, and Evaluating the Model
 ```
-* How many neurons, layers, and activation functions did you select for your neural network model, and why?
+4. How many neurons, layers, and activation functions did you select for your neural network model, and why?
 
 After experimenting with the model, we have come up with a final neural network model consisted of 3 layers, first two of which contain 32 and 11 nodes respectively, and ReLU and sigmoid activation functions. The model improved when sigmoid function was introduced instead of using ReLU for all the layers.
 
-* Were you able to achieve the target model performance?
+5. Were you able to achieve the target model performance?
 No, we were not able to achieve the target model performance over 75% accuracy.
 
-* What steps did you take in your attempts to increase model performance?
+6. What steps did you take in your attempts to increase model performance?
 Our attempts to optimize our model included: lowering the cutoff values for the APPLICATION_TYPE and CLASSIFICATION columns to reduce the number of bins, adding more hidden layers, increasing the number of hidden nodes, selecting different activation functions for the layers, and experimenting with the number of epochs to the training regimen.
 ```
 
