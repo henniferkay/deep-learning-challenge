@@ -46,6 +46,7 @@ We were not able to achive over 75% predictive accuracy as we aimed and hoped fo
 <img src="images/accuracy_opt.png">
 *optimized model*
 
+
 We addressed the following questions to explore and interpret our results:
 
 ### Data Preprocessing
