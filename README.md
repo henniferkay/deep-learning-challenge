@@ -40,11 +40,11 @@ For the optimization model, we increased the number of nodes and used sigmoid in
 We were not able to achive over 75% predictive accuracy as we aimed and hoped for. Despite of many trials, we achived up to only 73% accuracy.
 <img src="images/training_strt.png">
 <img src="images/accuracy_strt.png">
-*first model*
+**first model**
 
 <img src="images/training_opt.png">
 <img src="images/accuracy_opt.png">
-*optimized model*
+**optimized model**
 
 
 We addressed the following questions to explore and interpret our results:
